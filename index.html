@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    .active {
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <header class=" lg:px-36 pt-5">
+        <!-- navbar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">Peddy</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn">Button</a>
+            </div>
+        </div>
+        <!-- navbar end -->
+    </header>
+
+    <!-- main section -->
+
+    <main class=" lg:px-36 pt-5">
+        <!-- cantered section -->
+        <div class="hero ">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <p>Bringing Families Together ❤️‍🔥 </p>
+                    <h1 class="text-5xl font-bold">Your Path to Adoption Starts Here</h1>
+                    <p class="py-3 text-base">
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a.
+                    </p>
+                    <button class="btn btn-primary">View More</button>
+                </div>
+            </div>
+        </div>
+        <!-- ending cantered -->
+
+        <!-- cantered image section -->
+        <div class="text-center  items-center pb-6">
+            <div class="flex justify-center">
+                <img src="images/pet.webp" class=" lg:w-[803px] lg:h-[450px] object-cover" alt="">
+            </div>
+            <div class="">
+                <h1 class="text-3xl font-bold ">Adopt Your Best Friend</h1>
+                <p class="py-3 text-base lg:px-[300px]">It is a long established fact that a reader will be distracted
+                    by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                    it has a.
+                </p>
+            </div>
+        </div>
+        <!-- cantered image section ending -->
+
+        <section>
+            <!-- button load section -->
+            <nav id="button-load" class="flex justify-center gap-4 pb-20">
+            </nav>
+        </section>
+
+        <section class="flex">
+            <div id="all-pets" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  w-[950px]">
+
+            </div>
+            <div id="pets-img-show" class="grid lg:grid-cols-2 w-[312px] h-[312px]">
+            </div>
+
+        </section>
+        <!-- modal showing -->
+        <!-- Open the modal using ID.showModal() method -->
+        <button id="showModalData" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+        <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <div id="modal-content">
+
+                </div>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+    </main>
+<!-- footer section -->
+<footer class="footer bg-neutral text-base-content text-white p-10">
+    <nav>
+      <h6 class="footer-title">Services</h6>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Company</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Legal</h6>
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+    </nav>
+    <form>
+      <h6 class="footer-title">Newsletter</h6>
+      <fieldset class="form-control w-80">
+        <label class="label">
+          <span class="label-text">Enter your email address</span>
+        </label>
+        <div class="join">
+          <input
+            type="text"
+            placeholder="username@site.com"
+            class="input input-bordered join-item" />
+          <button class="btn btn-primary join-item">Subscribe</button>
+        </div>
+      </fieldset>
+    </form>
+  </footer>
+
+    <!-- connection link java file js_file -->
+    <script src="js/js_file.js"></script>
+</body>
+
+</html>
